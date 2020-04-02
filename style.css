@@ -163,7 +163,8 @@ section h1 {
     border: 0px;
     padding-top: 10%;
     font-size: 20px;
-    background-color: #ffffff;
+    background-color: transparent;
+
 }
 
 ul li {
