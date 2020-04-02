@@ -99,20 +99,20 @@ $(function () {
         offset: '60%'
     })
     // EXIT ON SCROLL ANIMATION 
-    $("#about-end").waypoint(function () {
-        $(".entranceRight").removeClass(' fadeInLeft');
-        $(".entranceRight").addClass(' fadeOutLeft');
-    $(".entranceRight").addClass('hide');
-    }, {
-        offset: '80%'
-    });
+    // $("#about-end").waypoint(function () {
+    //     $(".entranceRight").removeClass(' fadeInLeft');
+    //     $(".entranceRight").addClass(' fadeOutLeft');
+    // $(".entranceRight").addClass('hide');
+    // }, {
+    //     offset: '80%'
+    // });
 
-    $("#about-end").waypoint(function () {
-        $(".entranceLeft").removeClass(' fadeInRight');
-        $(".entranceLeft").addClass(' fadeOutRight');
-    }, {
-        offset: '70%'
-    });
+    // $("#about-end").waypoint(function () {
+    //     $(".entranceLeft").removeClass(' fadeInRight');
+    //     $(".entranceLeft").addClass(' fadeOutRight');
+    // }, {
+    //     offset: '70%'
+    // });
 
 
 
