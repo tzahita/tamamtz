@@ -317,8 +317,8 @@ textarea:focus~.bar:after {
 .fadeInLeft {
     animation: fadeInLeft 1.4s;
     animation-direction: reverse;
-    /* opacity: 1;
-    transition: opacity 2s; */
+    opacity: 1;
+    transition: opacity 2s;
 }
 
 .fadeOutLeft {
