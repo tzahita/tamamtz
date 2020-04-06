@@ -1,8 +1,9 @@
 :root {
-    --nav-hover-color: #afa2c2;
+    --nav-hover-color: #fdd18b96;
     --nav-bg-color: #191a1f;
     --nav-text-color: #dfdfdf;
     --sec-h1-color: #5d3636;
+    --sec-bg-dark: rgba(5, 3, 20, 0.966);
 }
 
 html,
@@ -174,7 +175,7 @@ ul li {
 
 /* Portfolio */
 .dark-background {
-    background-color: #14131C;
+    background-color: var(--sec-bg-dark) ;
     /* background: url('pics/photo-1437419764061-2473afe69fc2.jpg') top center no-repeat; */
     min-height: 1300px;
     background-attachment: fixed;
@@ -303,11 +304,11 @@ textarea:focus~.bar:after {
 }
 
 /* Animation */
-.hide {
-    opacity: 1;
+ /* .hide {
+    opacity: 0;
     transition: opacity 2s;
-}
-
+} */
+/*
 .fadeInRight {
     animation: fadeInRight 2s;
     animation-direction: alternate;
@@ -325,9 +326,9 @@ textarea:focus~.bar:after {
 .fadeOutLeft {
     animation: fadeOutLeft 3s;
     animation-direction: reverse;
-}
+} */
 
-@keyframes fadeInRight {
+/* @keyframes fadeInRight {
     0% {
         left: -500px;
         top: 0px;
@@ -340,9 +341,9 @@ textarea:focus~.bar:after {
 
     }
 
-}
+} */
 
-@keyframes fadeInLeft {
+/* @keyframes fadeInLeft {
     0% {
         left: 0px;
         top: 0px;
@@ -366,7 +367,7 @@ textarea:focus~.bar:after {
         right: -300px;
         top: 0px;
     }
-}
+} */
 
 /* Snow */
 .snowflake {
@@ -376,7 +377,7 @@ textarea:focus~.bar:after {
     text-shadow: 0 0 1px #000;
 }
 
-@-webkit-keyframes snowflakes-fall {
+/* @-webkit-keyframes snowflakes-fall {
     0% {
         top: -10%
     }
@@ -401,7 +402,7 @@ textarea:focus~.bar:after {
         -webkit-transform: translateX(0px);
         transform: translateX(0px)
     }
-}
+} 
 
 @keyframes snowflakes-fall {
     0% {
@@ -425,7 +426,7 @@ textarea:focus~.bar:after {
     100% {
         transform: translateX(0px)
     }
-}
+} */
 
 .snowflake {
     position: fixed;

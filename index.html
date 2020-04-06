@@ -1,289 +1,413 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Tzahi Tamam</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></!DOCTYPE>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+      integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U="
+      crossorigin="anonymous"
+    ></script>
     <script defer src="jquery.waypoints.min.js"></script>
     <script defer src="script.js"></script>
+    <link rel="stylesheet" href="css/animate.css" />
+  </head>
 
+  <body>
+    <nav
+      class="navbar .navbar-dark navbar-expand-lg fixed-top row"
+      id="navbar-style"
+    >
+      <p class="navbar-brand ml-5 nav-text">Tzahi Tamam</p>
 
-</head>
-
-<body>
-    <nav class="navbar .navbar-dark navbar-expand-lg fixed-top row" id="navbar-style">
-        <p class="navbar-brand ml-5 nav-text">Tzahi Tamam</p>
-
-        <button class="navbar-toggler "style="color:aliceblue" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=".navbar-dark .navbar-toggler-icon" ></span>
-        </button>
-        <div class="container">
-            <!-- <div class="col"></div> -->
-            <div class="row">
-                <div class="col-4"></div>
-                <div class="collapse navbar-collapse col" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto ">
-                        <li class="nav-item">
-                            <a class="nav-link" id="homeNav" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " id="aboutNav" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " id="portfolioNav" href="#portfolio">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " id="contactNav" href="#contact">Contact Me</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
+      <button
+        class="navbar-toggler "
+        style="color:aliceblue"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon">
+          <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+        </span>
+      </button>
+      <div class="container">
+        <!-- <div class="col"></div> -->
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="collapse navbar-collapse col" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ">
+              <li class="nav-item">
+                <a class="nav-link" id="homeNav" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " id="aboutNav" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " id="portfolioNav" href="#portfolio"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " id="contactNav" href="#contact"
+                  >Contact Me</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </nav>
 
     <div class="cover" id="home">
-        <div class="cover-text text-left">
-            <div class="animated fadeInUp ">
-
-                <div class="snowflakes" id="snow-encore" aria-hidden="false">
-                    <div class="snowflake">
-                        ❅
-                    </div>
-                    <div class="snowflake">
-                        ❅
-                    </div>
-                    <div class="snowflake">
-                        ❆
-                    </div>
-                    <div class="snowflake">
-                        ❄
-                    </div>
-                    <div class="snowflake">
-                        ❅
-                    </div>
-                    <div class="snowflake">
-                        ❆
-                    </div>
-                    <div class="snowflake">
-                        ❄
-                    </div>
-                    <div class="snowflake">
-                        ❅
-                    </div>
-                    <div class="snowflake">
-                        ❆
-                    </div>
-                    <div class="snowflake">
-                        ❄
-                    </div>
-                </div>
-                <h1 class="lead">Tzahi Tamam</h1>
-                <p class="lead">QA Engineer - Front End Web Developer</p>
-                <!-- <a href="#portfolio" role="button" class="btn btn-lg">My Portfolio</a> -->
-            </div>
+      <div class="cover-text text-left">
+        <div class="snowflakes" aria-hidden="true">
+          <div class="snowflake">
+          ❅
+          </div>
+          <div class="snowflake">
+          ❅
+          </div>
+          <div class="snowflake">
+          ❆
+          </div>
+          <div class="snowflake">
+          ❄
+          </div>
+          <div class="snowflake">
+          ❅
+          </div>
+          <div class="snowflake">
+          ❆
+          </div>
+          <div class="snowflake">
+          ❄
+          </div>
+          <div class="snowflake">
+          ❅
+          </div>
+          <div class="snowflake">
+          ❆
+          </div>
+          <div class="snowflake">
+          ❄
+          </div>
         </div>
+        <div class="animated wow fadeInUp " data-wow-duration="2s">
+          <h1 class="lead">Tzahi Tamam</h1>
+          <p class="lead">QA Engineer - Front End Web Developer</p>
+          <!-- <a href="#portfolio" role="button" class="btn btn-lg">My Portfolio</a> -->
+        </div>
+      </div>
     </div>
     <div class="bgc-container">
-        <span id="home-end"></span>
-        <section class="section overlap-section-above " id="about">
-            <div class="container ">
-
-                <div class="row">
-                    <div class="col-md-12  cover-text-black ">
-                        <h1 class="text-center">About me</h1>
-                        <div class="row">
-                            <div class="card col-md-6 col-sm-12 card-no-border fade  entranceLeft">
-                                <div class="card-body">
-                                    <h3 class="card-title">QA Engineer</h3>
-                                    <p>Knowledge of Web UI technologies including REST APIs, HTML5, HTTP,
-                                        Web
-                                        Application frameworks and JSON data transform.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 entranceRight fade">
-                                <div class=" row col-md-6 text-center img-skills">
-                                    <img src="pics/html5.svg" class="img-fluid" id="img01">
-                                    <img src="pics/CSS3_logo_and_wordmark.svg.png" height="150px" class="img-fluid"
-                                        id="img02">
-                                </div>
-                            </div>
-                            <div class="col-md-6 entranceRight fade">
-                                <div class=" row col-md-6 text-center img-skills">
-                                    <img src="pics/java.jpeg"class="img-fluid" id="img03">
-                                    <img src="pics/js-logo.png" class="img-fluid" id="img04">
-                                </div>
-                            </div>
-                            <div class="card col-md-6 col-sm-12 card-no-border fade entranceLeft">
-                                <div class="card-body">
-                                    <h3 class="card-title">Automation QA Engineer</h3>
-                                    <p>Developing web and mobile test automation using selenium, JAVA, cypress and
-                                        JavaScript.</p>
-                                </div>
-                            </div>
-
-                            <div class="card col-md-6 col-sm-12 card-no-border fade entranceLeft">
-                                <div class="card-body">
-                                    <h3 class="card-title">Full Stack</h3>
-                                    <p>Experienced in JavaScript vanilla, Bootstrap, Jquery, MySQL, MongoDB, etc.  </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 entranceRight fade">
-                                <div class=" row col-md-6 text-center img-skills">
-                                    <img src="pics/bootstrap-logo-png-logo-228.png"  class=" col img-fluid"
-                                        id="img05">
-                                    <img src="pics/480649_preview.png" class="img-fluid" id="img06">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <span id="home-end"></span>
+      <section class="section overlap-section-above " id="about">
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-12  cover-text-black ">
+              <h1 class="text-center wow bounceInDown"  data-wow-duration="2s">About me</h1>
+              <div class="row">
+                <div
+                  class="card col-md-6 col-sm-12 card-no-border wow bounceInUp wow fadeInLeft"  data-wow-duration="2s"
+                >
+                  <div class="card-body">
+                    <h3 class="card-title">QA Engineer</h3>
+                    <p>
+                      Knowledge of Web UI technologies including REST APIs,
+                      HTML5, HTTP, Web Application frameworks and JSON data
+                      transform.
+                    </p>
+                  </div>
                 </div>
+                <div class="col-md-6 wow fadeInRight "  data-wow-duration="2s">
+                  <div class=" row col-md-6 text-center img-skills"  data-wow-duration="2s">
+                    <img src="pics/html5.svg" class="img-fluid" id="img01" />
+                    <img
+                      src="pics/CSS3_logo_and_wordmark.svg.png"
+                      height="150px"
+                      class="img-fluid"
+                      id="img02"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6 wow fadeInRight " data-wow-duration="2s">
+                  <div class=" row col-md-6 text-center img-skills">
+                    <img src="pics/java.jpeg" class="img-fluid" id="img03" />
+                    <img src="pics/js-logo.png" class="img-fluid" id="img04" />
+                  </div>
+                </div>
+                <div
+                  class="card col-md-6 col-sm-12 card-no-border  wow fadeInLeft" data-wow-duration="2s"
+                >
+                  <div class="card-body">
+                    <h3 class="card-title">Automation QA Engineer</h3>
+                    <p>
+                      Developing web and mobile test automation using selenium,
+                      JAVA, cypress and JavaScript.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="card col-md-6 col-sm-12 card-no-border  wow fadeInLeft" data-wow-duration="2s"
+                >
+                  <div class="card-body">
+                    <h3 class="card-title">Full Stack</h3>
+                    <p>
+                      Experienced in JavaScript vanilla, Bootstrap, Jquery,
+                      MySQL, MongoDB, etc.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6 wow fadeInRight " data-wow-duration="2s">
+                  <div class=" row col-md-6 text-center img-skills">
+                    <img
+                      src="pics/bootstrap-logo-png-logo-228.png"
+                      class=" col img-fluid"
+                      id="img05"
+                    />
+                    <img
+                      src="pics/480649_preview.png"
+                      class="img-fluid"
+                      id="img06"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-        <span id="about-end"></span>
-        <section class="dark-background " id="portfolio">
-            <div class="container entranceUp ">
-                <h1 re>My Portfolio</h1>
-                <div class="card-columns">
-                    <div class="card rellax" data-rellax-speed="-3">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title that wraps to a new line</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                    <div class="card p-3 rellax" data-rellax-speed="0">
-                        <blockquote class="blockquote mb-0 card-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                            <footer class="blockquote-footer">
-                                <small class="text-muted">
-                                    Someone famous in <cite title="Source Title">Source Title</cite>
-                                </small>
-                            </footer>
-                        </blockquote>
-                    </div>
-                    <div class="card rellax" data-rellax-speed="0">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                                content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <div class="card bg-primary text-white text-center p-3 rellax" data-rellax-speed="-1">
-                        <blockquote class="blockquote mb-0">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-                            <footer class="blockquote-footer">
-                                <small>
-                                    Someone famous in <cite title="Source Title">Source Title</cite>
-                                </small>
-                            </footer>
-                        </blockquote>
-                    </div>
-                    <div class="card text-center rellax" data-rellax-speed="-2">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                                content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-
-                    <div class="card p-3 text-right  rellax" data-rellax-speed="-3">
-                        <blockquote class="blockquote mb-0">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                            <footer class="blockquote-footer">
-                                <small class="text-muted">
-                                    Someone famous in <cite title="Source Title">Source Title</cite>
-                                </small>
-                            </footer>
-                        </blockquote>
-                    </div>
-                    <div class="card rellax" data-rellax-speed="0">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This card has even longer content than the first to show that equal
-                                height action.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- .container -->
-        </section>
-        <span id="portfolio-end"></span>
-
-        <div id="contact">
-            <section>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 entranceContactLeft contact-form">
-                            <h1>Contact Me</h1>
-                            <form>
-                                <div class="form-group">
-                                    <input type="text" class="form-control input-lg" placeholder=" ">
-                                    <span class="bar"></span>
-                                    <label>Name</label>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control input-lg" placeholder=" ">
-                                    <span class="bar"></span>
-                                    <label>Email Address</label>
-                                </div>
-                                <div class="form-group">
-                                    <textarea rows="4" class="form-control input-lg" placeholder=" "></textarea>
-                                    <span class="bar"></span>
-                                    <label>Message</label>
-                                </div>
-                                <button type="button" class="btn btn-lg btn-block">Send</button>
-                            </form>
-                        </div>
-                        <div class="col-md-6 entranceContactRight">
-                            <a href="https://www.facebook.com/zachitamam" target="_blank">
-                                <img class="contact-img" src="pics/facebook-3-xxl.png" alt="Facebook">Find me on Facebook!
-                            </a>
-                        </div>
-                        <div class="col-md-6 entranceContactRight">
-                            <a href="https://www.linkedin.com/in/tzahi-tamam-65946ba9/" target="_blank">
-                                <img class="contact-img" src="pics/linkedin-3-xxl.png" alt="Linkedin">Find me on Linkedin!
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <footer>
-                <div class="container">
-                    <p id="footer-text">Tzahi Tamam - 2020</p>
-                </div>
-            </footer>
+          </div>
         </div>
+      </section>
+      <span id="about-end"></span>
+      <section class="dark-background " id="portfolio">
+        <div class="container entranceUp ">
+          <h1 re>My Portfolio</h1>
+          <div class="card-columns wow flipInX" data-wow-duration="2s">
+            <div class="card rellax" data-rellax-speed="-3">
+              <img class="card-img-top" src="..." alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title">Card title that wraps to a new line</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+            <div class="card p-3 rellax" data-rellax-speed="0">
+              <blockquote class="blockquote mb-0 card-body">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer posuere erat a ante.
+                </p>
+                <footer class="blockquote-footer">
+                  <small class="text-muted">
+                    Someone famous in
+                    <cite title="Source Title">Source Title</cite>
+                  </small>
+                </footer>
+              </blockquote>
+            </div>
+            <div class="card rellax" data-rellax-speed="0">
+              <img class="card-img-top" src="..." alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This card has supporting text below as a natural lead-in to
+                  additional content.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+            <div
+              class="card bg-primary text-white text-center p-3 rellax"
+              data-rellax-speed="-1"
+            >
+              <blockquote class="blockquote mb-0">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer posuere erat.
+                </p>
+                <footer class="blockquote-footer">
+                  <small>
+                    Someone famous in
+                    <cite title="Source Title">Source Title</cite>
+                  </small>
+                </footer>
+              </blockquote>
+            </div>
+            <div class="card text-center rellax" data-rellax-speed="-2">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This card has supporting text below as a natural lead-in to
+                  additional content.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
 
+            <div class="card p-3 text-right  rellax" data-rellax-speed="-3">
+              <blockquote class="blockquote mb-0">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer posuere erat a ante.
+                </p>
+                <footer class="blockquote-footer">
+                  <small class="text-muted">
+                    Someone famous in
+                    <cite title="Source Title">Source Title</cite>
+                  </small>
+                </footer>
+              </blockquote>
+            </div>
+            <div class="card rellax" data-rellax-speed="0">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This card has even longer
+                  content than the first to show that equal height action.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .container -->
+      </section>
+      <span id="portfolio-end"></span>
+
+      <div id="contact">
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 entranceContactLeft contact-form">
+                <h1 class="wow bounce" id="contactHeader" data-wow-duration="2s" data-wow-iteration="10">Contact Me</h1>
+                <form>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control input-lg"
+                      placeholder=" "
+                    />
+                    <span class="bar"></span>
+                    <label>Name</label>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control input-lg"
+                      placeholder=" "
+                    />
+                    <span class="bar"></span>
+                    <label>Email Address</label>
+                  </div>
+                  <div class="form-group">
+                    <textarea
+                      rows="4"
+                      class="form-control input-lg"
+                      placeholder=" "
+                    ></textarea>
+                    <span class="bar"></span>
+                    <label>Message</label>
+                  </div>
+                  <button type="button" class="btn btn-lg btn-block">
+                    Send
+                  </button>
+                </form>
+              </div>
+              <div class="col-md-6 entranceContactRight">
+                <a href="https://www.facebook.com/zachitamam" target="_blank">
+                  <img
+                    class="contact-img"
+                    src="pics/facebook-3-xxl.png"
+                    alt="Facebook"
+                  />Find me on Facebook!
+                </a>
+              </div>
+              <div class="col-md-6 entranceContactRight">
+                <a
+                  href="https://www.linkedin.com/in/tzahi-tamam-65946ba9/"
+                  target="_blank"
+                >
+                  <img
+                    class="contact-img"
+                    src="pics/linkedin-3-xxl.png"
+                    alt="Linkedin"
+                  />Find me on Linkedin!
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <div class="container">
+            <p id="footer-text">Tzahi Tamam - 2020</p>
+          </div>
+        </footer>
+      </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
-        integrity="sha256-+xf9aJnHocnmrigq2hIDJGBSAnJdF5NH+Ooe5J2PHiI=" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
+      integrity="sha256-+xf9aJnHocnmrigq2hIDJGBSAnJdF5NH+Ooe5J2PHiI="
+      crossorigin="anonymous"
+    ></script>
     <script defer>
-        let rellax = new Rellax('.rellax');
+      let rellax = new Rellax(".rellax");
     </script>
-</body>
-
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
 </html>
