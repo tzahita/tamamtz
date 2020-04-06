@@ -1,5 +1,5 @@
 :root {
-    --nav-hover-color: #fdd18b96;
+    --nav-hover-color: #fdd18bf6;
     --nav-bg-color: #191a1f;
     --nav-text-color: #dfdfdf;
     --sec-h1-color: #5d3636;
@@ -46,6 +46,10 @@ section h1 {
 /* nav */
 #navbar-style {
     background-color: var(--nav-bg-color);
+}
+
+.nav-text-col{
+    color: var(--nav-hover-color);
 }
 
 .navbar-nav li a {
