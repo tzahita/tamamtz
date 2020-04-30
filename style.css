@@ -6,6 +6,13 @@
     --sec-bg-dark: rgba(5, 3, 20, 0.966);
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
 html,
 body,
 .cover {
@@ -48,7 +55,7 @@ section h1 {
     background-color: var(--nav-bg-color);
 }
 
-.nav-text-col{
+.nav-text-col {
     color: var(--nav-hover-color);
 }
 
@@ -104,6 +111,7 @@ section h1 {
 
     /* transition: opacity 2s; */
 }
+
 /* home-page */
 .cover {
     background: url('pics/photo-1437419764061-2473afe69fc2.jpg') top center no-repeat;
@@ -111,6 +119,7 @@ section h1 {
     background-attachment: fixed;
     display: table;
     width: 100%;
+    height: 100%;
     padding: 0 25%;
     box-shadow: inset 0 0 100px #000;
 
@@ -139,10 +148,11 @@ section h1 {
 
 
 /* About */
-#about{
-    background-color: #ffffff;  
+#about {
+    background-color: #ffffff;
     box-shadow: inset 0 0 50px #000;
 }
+
 .img-skills img {
     padding-bottom: 10px;
 
@@ -179,7 +189,7 @@ ul li {
 
 /* Portfolio */
 .dark-background {
-    background-color: var(--sec-bg-dark) ;
+    background-color: var(--sec-bg-dark);
     /* background: url('pics/photo-1437419764061-2473afe69fc2.jpg') top center no-repeat; */
     min-height: 1300px;
     background-attachment: fixed;
@@ -188,6 +198,13 @@ ul li {
 
 .dark-background h1 {
     color: #f4edff;
+}
+
+.card{
+    min-height: 100%;
+    line-height: 3;
+    font-size: 16px;
+    text-align: left;
 }
 
 /* Contact */
@@ -307,223 +324,49 @@ textarea:focus~.bar:after {
 
 }
 
-/* Animation */
- /* .hide {
-    opacity: 0;
-    transition: opacity 2s;
-} */
-/*
-.fadeInRight {
-    animation: fadeInRight 2s;
-    animation-direction: alternate;
-    opacity: 1;
-    transition: opacity 2s;
-}
+@media only screen and (max-width: 768px) {
 
-.fadeInLeft {
-    animation: fadeInLeft 1.4s;
-    animation-direction: reverse;
-    opacity: 1;
-    transition: opacity 2s;
-}
+    #img01,
+    #img03,
+    #img05 {
+        margin-left: 50%;
+    }
 
-.fadeOutLeft {
-    animation: fadeOutLeft 3s;
-    animation-direction: reverse;
-} */
+    .cover {
+        padding: 0;
+        background: url('pics/nicolas-solerieu-Hgb4gzB1ZPs-unsplash.jpg') top center no-repeat;
+        background-size: 700px;
+        background-attachment: fixed;
+        display: block;
+        box-shadow: inset 0 0 100px #000;
+        min-height: 500px;
+    }
 
-/* @keyframes fadeInRight {
-    0% {
-        left: -500px;
-        top: 0px;
+    .cover-text h1 {
+        margin-top: 50%;
+        font-size: 50px;
+        letter-spacing: -3px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .cover-text p {
+        margin: 0;
+        font-size: 20px;
+        padding: 15px;
+        text-align: center;
 
     }
 
-    100% {
-        left: 0px;
-        top: 0px;
-
+    #navbar-style {
+        background-color: var(--nav-bg-color);
     }
 
-} */
-
-/* @keyframes fadeInLeft {
-    0% {
-        left: 0px;
-        top: 0px;
-
+    .navbar-nav li a  {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin-left: 60%;
     }
 
-    100% {
-        left: 200px;
-        top: 0px;
-    }
-
-}
-
-@keyframes fadeOutLeft {
-    0% {
-        left: 0px;
-        top: 0px;
-    }
-
-    100% {
-        right: -300px;
-        top: 0px;
-    }
-} */
-
-/* Snow */
-.snowflake {
-    color: #fff;
-    font-size: 1em;
-    font-family: Arial;
-    text-shadow: 0 0 1px #000;
-}
-
-/* @-webkit-keyframes snowflakes-fall {
-    0% {
-        top: -10%
-    }
-
-    100% {
-        top: 100%
-    }
-}
-
-@-webkit-keyframes snowflakes-shake {
-    0% {
-        -webkit-transform: translateX(0px);
-        transform: translateX(0px)
-    }
-
-    50% {
-        -webkit-transform: translateX(80px);
-        transform: translateX(80px)
-    }
-
-    100% {
-        -webkit-transform: translateX(0px);
-        transform: translateX(0px)
-    }
-} 
-
-@keyframes snowflakes-fall {
-    0% {
-        top: -10%
-    }
-
-    100% {
-        top: 100%
-    }
-}
-
-@keyframes snowflakes-shake {
-    0% {
-        transform: translateX(0px)
-    }
-
-    50% {
-        transform: translateX(80px)
-    }
-
-    100% {
-        transform: translateX(0px)
-    }
-} */
-
-.snowflake {
-    position: fixed;
-    top: -10%;
-    z-index: 1028;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    cursor: default;
-    -webkit-animation-name: snowflakes-fall, snowflakes-shake;
-    -webkit-animation-duration: 10s, 3s;
-    -webkit-animation-timing-function: linear, ease-in-out;
-    -webkit-animation-iteration-count: infinite, infinite;
-    -webkit-animation-play-state: running, running;
-    animation-name: snowflakes-fall, snowflakes-shake;
-    animation-duration: 10s, 3s;
-    animation-timing-function: linear, ease-in-out;
-    animation-iteration-count: infinite, infinite;
-    animation-play-state: running, running
-}
-
-.snowflake:nth-of-type(0) {
-    left: 1%;
-    -webkit-animation-delay: 0s, 0s;
-    animation-delay: 0s, 0s
-}
-
-.snowflake:nth-of-type(1) {
-    left: 10%;
-    -webkit-animation-delay: 1s, 1s;
-    animation-delay: 1s, 1s
-}
-
-.snowflake:nth-of-type(2) {
-    left: 20%;
-    -webkit-animation-delay: 6s, .5s;
-    animation-delay: 6s, .5s
-}
-
-.snowflake:nth-of-type(3) {
-    left: 30%;
-    -webkit-animation-delay: 4s, 2s;
-    animation-delay: 4s, 2s
-}
-
-.snowflake:nth-of-type(4) {
-    left: 40%;
-    -webkit-animation-delay: 2s, 2s;
-    animation-delay: 2s, 2s
-}
-
-.snowflake:nth-of-type(5) {
-    left: 50%;
-    -webkit-animation-delay: 8s, 3s;
-    animation-delay: 8s, 3s
-}
-
-.snowflake:nth-of-type(6) {
-    left: 60%;
-    -webkit-animation-delay: 6s, 2s;
-    animation-delay: 6s, 2s
-}
-
-.snowflake:nth-of-type(7) {
-    left: 70%;
-    -webkit-animation-delay: 2.5s, 1s;
-    animation-delay: 2.5s, 1s
-}
-
-.snowflake:nth-of-type(8) {
-    left: 80%;
-    -webkit-animation-delay: 1s, 0s;
-    animation-delay: 1s, 0s
-}
-
-.snowflake:nth-of-type(9) {
-    left: 90%;
-    -webkit-animation-delay: 3s, 1.5s;
-    animation-delay: 3s, 1.5s
-}
-
-/* Demo Purpose Only*/
-.demo {
-    font-family: 'Raleway', sans-serif;
-    color: #fff;
-    display: block;
-    margin: 0 auto;
-    padding: 15px 0;
-    text-align: center;
-}
-
-.demo a {
-    font-family: 'Raleway', sans-serif;
-    color: rgb(255, 255, 255);
 }
